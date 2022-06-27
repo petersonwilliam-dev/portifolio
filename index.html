@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/icon_logo.png" type="image/x-icon">
+    <title>Desenvolvedor Web | Peterson William</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <header id="cabecalho">
+            <div class="row">
+                <div class="col g-0 bg-dark navbar-dark sticky-top">
+                    <div class="center">
+                        <img src="img/logo.png" alt="Logo" id="logo">
+                            <ul class="nav-navigator navbar-nav text-end">
+                                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                                <li><a href="#identidade" class="nav-link">Quem sou</a></li>
+                                <li><a href="#contatos" class="nav-link">Contatos</a></li>
+                            </ul>
+                            <ion-icon id="moon" onclick="activeBlackMode()" class="text-light" name="moon-outline"></ion-icon>
+                    </div><!--center-->
+                </div>
+            </div>
+        </header><!--header-->
+
+        <main class="main">
+            <section class="intro">
+                <div class="row">
+                    <div class="col g-0 intro" id="intro">
+                        <div class="center">
+                            <h1 class="text-primary anima">Seja bem-vindo</h1>
+                            <p class="lead text-secondary anima">Este é o meu portifólio, onde você poderá encontrar meus projetos e saber um pouco mais sobre mim</p>
+                        </div><!--center-->
+                    </div>
+                </div>
+            </section><!--section intro-->
+            
+            <section class="projetos" id="projetos">
+                        <div class="center">
+                            <div class="projects">
+                                <h2 class="text-light text-center bg-dark">Projetos</h2>
+                                <p class="h5 text-center" id="tecnologias_utilizadas"></p>
+                                <div class="row" id="container-projetos">
+                                    
+                                </div>
+                            </div><!--projects-->
+                        </div><!--center-->
+
+            </section><!--section projetos-->
+
+            <section class="identidade" id="identidade" style="margin-right: 10px; margin-left: 10px;">
+                <div class="row">
+                    <div class="col g-0">
+                        <div class="center">
+                            <hr>
+                                <h2 class="text-center text-light bg-dark">Quem sou</h2>
+                                <div class="identity">
+                                    <div class="clearfix">
+                                             <img src="img/perfil.jpeg" id="perfilDev" class="col-md-6 float-md-end animaFoto mb-3 ms-md-3 rounded mx-auto d-block rounded-circle img-fluid" alt="Foto do desenvolvedor">
+                                      
+                                        <p class="text-secondary" style="margin: 0 10px;">
+                                            Olá, me chamo Peterson William, atualmente moro em Surubim-PE, sou técnico em desenvolvimento de sistemas e desenvolvedor web, apaixonado pela tecnologia e pela arte de programar, um eterno aprendiz disposto sempre e melhorar e que almeja o sucesso profissional
+                                        </p>
+                                      
+                                      </div>
+                                </div><!--identity-->
+                            <hr>
+                        </div><!--center-->
+                    </div>
+                </div>
+            </section><!--section identidade-->
+            
+            <footer id="contatos">
+                <div class="row">
+                    <div class="col g-0 bg-dark">
+                        <hr style="color: white;">
+                        <div class="contatos text-center">
+                            <h2 class="text-light">Contatos</h2>
+                                <ul class="list-group">
+                                        <a href="https://wa.me/+5581998981250" class="text-light" target="_blank" data-contato="whats"><ion-icon name="logo-whatsapp"></ion-icon> WhatsApp</a>
+                                    
+                                        <a href="https://www.instagram.com/petersonwl0/" target="_blank" class="text-light" data-contato="insta"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+
+                                        <a href="https://github.com/petersonwilliam-dev" class="text-light" target="_blank" data-contato="github"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                                        <a href="#cabecalho" class="text-light btn btn-dark">Voltar ao início</a>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </main><!--main--> 
+    </div><!--container fluid--> 
+
+    <script src="JS/script.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

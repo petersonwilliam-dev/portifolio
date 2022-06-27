@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Quicksand:wght@300&family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Quicksand:wght@300&family=Raleway:wght@200;900&family=Staatliches&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    transition: 1s;
+}
+.dark{
+    background-color: #181a1d;
+}
+.bg-escuro{
+    background-color: #131417;
+}
+p{
+    transition: 1s;
+}
+section {
+    margin-bottom: 40px;
+}
+/* NAVBAR */
+.center{
+    max-width: 900px;
+    margin: 0 auto;
+}
+header .center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.nav-navigator{
+    margin: auto 0px;
+    display: flex;
+    align-items: center;
+}
+header ion-icon{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#logo{
+    width: 200px;
+    margin: 0 10px;
+}
+.navbar-nav{
+    flex-direction: row;
+}
+.navbar-nav li {
+    margin: 0 10px;
+}
+.nav-navigator a{
+    position: relative;
+}
+.nav-navigator a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+.nav-navigator a:hover::after{
+    width: 100%;
+}
+
+
+/* MAIN */
+
+/* INTRO */
+#intro{
+    transition: 1s;
+}
+section div.intro{
+    background-color: rgb(245, 245, 245);
+}
+.intro .center{
+    text-align: center;
+    padding: 40px 0px;
+}
+.intro h1{
+    font-weight: bold;
+    font-size: 40pt;
+    margin:30px 0px;
+    transition: 1s;
+}
+.intro p {
+    transition: 2s;
+}
+.anima{
+    transform: translate3d(0, -100px, 0);
+    opacity: 0;
+}
+/* PROJECTS */
+
+.projects{
+    margin: 50px 0px;
+    border: 1px solid rgb(241, 241, 241);
+    box-shadow: 1px 1px 10px rgb(202, 202, 202);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.projects h2{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.project-container{
+    max-width: 250px;
+    margin: 20px auto;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.project-body img{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+}
+.project-body p{
+    text-align:center;
+
+}
+.project-body a{
+    margin-bottom: 10px;
+}
+
+/* QUEM SOU */  
+
+.identidade h2 {
+    font-weight: bold;
+    margin: 30px 0px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px rgb(200, 200, 200);
+}
+#perfilDev{
+    width: 1px;
+    transition: 1s;
+}
+/* CONTATOS */
+
+.contatos{
+    margin: 30px 0px;
+}
+.contatos h2{
+    font-weight: bold;
+}
+.list-group{
+    max-width: 200px;
+    margin: 0px auto;
+}
+[data-contato] {
+    padding: 15px;
+    font-size: 15pt;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    margin: 5px 0px;
+}
+[data-contato]:hover {
+    font-size: 17pt;
+}
+[data-contato="whats"] {
+    background: #1ed760;
+
+}
+[data-contato="insta"] {
+    background: #8d3aa2;
+}
+[data-contato="github"] {
+    background: rgb(66, 65, 65);
+}
+
+[data-contato="whats"]:hover{
+    background: #1bb651;
+}
+[data-contato="insta"]:hover{
+    background: #7c318e;
+}
+[data-contato="github"]:hover{
+    background: rgb(41, 41, 41);
+}
+
+@media screen and (max-width: 535px) {
+    .nav-navigator{
+        display: none;
+    }
+}
