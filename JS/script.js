@@ -1,6 +1,25 @@
 var black = false;
 
-var projetos = []
+var projetos = [
+    {
+        nome: "Jogo da Nave",
+        img: "img/jogoNave.png",
+        descricao: "Jogo da nave com funcionalidade de movitação e disparo, feito com javascript",
+        url: "https://petersonwilliam-dev.github.io/space-shooter/"
+    },
+    {
+        nome: "Landing page",
+        img: "img/landing.png",
+        descricao: "Landing page desenvolvida através das tecnologias HTML, CSS e Javascript",
+        url: "https://petersonwilliam-dev.github.io/landingpage/"
+    },
+    {
+        nome: "Crud",
+        img: "img/crud.png",
+        descricao: "Crud simples feito com Laravel",
+        url: "https://github.com/petersonwilliam-dev/crud-laravel/tree/master"
+    }
+]
 
 function inicia() {
     document.querySelectorAll(".anima").forEach((e) => {
@@ -35,9 +54,11 @@ function adicionaProjetos() {
             let img_project = document.createElement("img")
             img_project.setAttribute("src", projetos[i].img)
             img_project.setAttribute("alt", projetos[i].nome)
+            img_project.setAttribute("class", "img-project")
         
             let textoparagrafo = document.createElement("p")
             textoparagrafo.setAttribute("class", "text-secondary")
+            textoparagrafo.style.padding = "10px"
             textoparagrafo.innerHTML = projetos[i].descricao
         
             let text_center = document.createElement("div")
@@ -46,6 +67,11 @@ function adicionaProjetos() {
             let button = document.createElement("a")
             button.setAttribute("class", "btn btn-primary")
             button.setAttribute("href", projetos[i].url)
+            button.setAttribute("target", "_blank")
+            if(i == 2) {
+                button.setAttribute("data-bs-toggle", "modal")
+                button.setAttribute("data-bs-target", "#exampleModal")
+            }
             button.innerHTML = "Veja"
         
             text_center.appendChild(button)
