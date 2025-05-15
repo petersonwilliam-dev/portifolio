@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+section {
+  min-height: 500px;
+  text-align: center;
+}
+
+section h2 {
+  display: inline-block;
+  padding-bottom: .3em;
+  border-bottom: 2px solid #fff;
+  min-width: 250px;
+  text-align: center;
+}
