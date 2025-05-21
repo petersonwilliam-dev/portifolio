@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    padding: 2em;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 75px;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 50px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        padding: 0;
+        margin: 1em;
+    }
+    .logo img {
+        width: 40px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+}
