@@ -1,5 +1,5 @@
 import CardProject from "../Card/CardProject"
-import { projects } from "../../assets/consts/consts"
+import projects from "../../assets/consts/projects"
 
 function Projects() {
     return (

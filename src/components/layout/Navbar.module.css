@@ -34,6 +34,10 @@
     transition: width .3s ease;
 }
 
+.menu li {
+    font-size: 15px;
+}
+
 .menu li:hover::after {
     width: 100%;
 }

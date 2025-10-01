@@ -1,13 +1,9 @@
 .card {
     padding: 1em;
     display: inline-block;
-    max-width: 300px;
+    max-width: 400px;
     margin: 1.5em;
     transition: transform .5s ease;
-}
-
-.image_experience {
-    margin: 1em 0;
 }
 
 .card:hover {
@@ -15,8 +11,13 @@
     box-shadow: 1px 1px 10px #222;
 }
 
+.card h5 {
+    margin: .5em 0;
+}
+
 .card p {
     font-size: 15px;
+    margin: .2em 0;
 }
 
 .card p span{

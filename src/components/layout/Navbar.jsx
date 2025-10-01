@@ -18,6 +18,7 @@ function Navbar() {
                 <ul className={`${styles.menu} lead`}>
                     <li onClick={() => scrollView('aboutme')}>Sobre mim</li>
                     <li onClick={() => scrollView('skills')}>Habilidades</li>
+                    <li onClick={() => scrollView('experiences')}>Experiências</li>
                     <li onClick={() => scrollView('projects')}>Projetos</li>
                     <li onClick={() => scrollView('contacts')}>Contatos</li>
                 </ul>

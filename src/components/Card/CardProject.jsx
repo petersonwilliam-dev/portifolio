@@ -1,15 +1,14 @@
 import styles from './CardProject.module.css'
-import img from '../../assets/img/logo.png'
 
-import { Link } from "react-router-dom"
 import ModalProject from '../Modal/ModalProject'
 
 function CardProject({project}) {
+
     return (
         <>
             <div className={styles.card}>
                 <div className={styles.image_project}>
-                    <img src={project.images[0]} alt="Imagem do projeto" className='w-100'/>
+                    <img src={`${project.images[0]}`} alt="Imagem do projeto" className='w-100'/>
                 </div>
                 <div className="text-start">
                     <h5>{project.name}</h5>
