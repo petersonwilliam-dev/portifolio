@@ -7,62 +7,76 @@ import react from '../img/react.webp'
 import sql from '../img/sql.png'
 import python from '../img/python.webp'
 import mongodb from '../img/mongodb.webp'
-
+import docker from '../img/docker.png'
+import github from '../img/github.png'
+import linux from '../img/linux.png'
+import spring from '../img/spring.svg'
 
 const skills = [
     {
         name: 'HTML',
         urlImage: html,
-        percentage: 90,
         hex: '#ff6d00'
     },
     {
         name: 'CSS',
         urlImage: css,
-        percentage: 60,
         hex: '#0a84df'
     },
     {
         name: 'Javascript',
         urlImage: javascript,
-        percentage: 80,
         hex: '#fed700'
     },
     {
         name: 'Node Js',
         urlImage: node,
-        percentage: 70,
         hex: '#4caf50'
     },
     {
         name: 'React Js',
         urlImage: react,
-        percentage: 75,
         hex: '#0a84df'
     },
     {
         name: 'Java',
         urlImage: java,
-        percentage: 70,
         hex: '#ed2024'
     },
     {
         name: 'SQL',
         urlImage: sql,
-        percentage: 60,
         hex: '#db7533'
     },
     {
         name: 'Python',
         urlImage: python,
-        percentage: 50,
         hex: '#366e9d'
     },
     {
         name: 'MongoDB',
         urlImage: mongodb,
-        percentage: 50,
         hex: '#4daa3f'
+    },
+    {
+        name: "Docker",
+        urlImage: docker,
+        hex: "#006bc0"
+    },
+    {
+        name: "GitHub",
+        urlImage: github,
+        hex: "#fff"
+    },
+    {
+        name: "Linux",
+        urlImage: linux,
+        hex: '#ccc'
+    },
+    {
+        name: "Spring",
+        urlImage: spring,
+        hex: "#5fb92e"
     }
 ]
 
