@@ -11,6 +11,8 @@ import docker from '../img/docker.png'
 import github from '../img/github.png'
 import linux from '../img/linux.png'
 import spring from '../img/spring.svg'
+import typescript from '../img/typescript.png'
+import nestjs from '../img/nestjs.png'
 
 const skills = [
     {
@@ -29,9 +31,19 @@ const skills = [
         hex: '#fed700'
     },
     {
+        name: 'Typescript',
+        urlImage: typescript,
+        hex: '#3178c6'
+    },
+    {
         name: 'Node Js',
         urlImage: node,
         hex: '#4caf50'
+    },
+    {
+        name: 'Nest Js',
+        urlImage: nestjs,
+        hex: '#f50057'
     },
     {
         name: 'React Js',
