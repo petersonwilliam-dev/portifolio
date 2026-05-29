@@ -10,12 +10,13 @@ function Navbar() {
     }
 
     return (
-        <nav className={`d-block d-lg-flex bg-dark text-light p-3 sticky-top ${styles.navbar}`}>
+        <nav className={`d-block d-lg-flex p-3 sticky-top ${styles.navbar}`}>
             <div className="logo d-flex justify-content-center d-lg-block">
                 <img src={logo} alt="Logo" className={styles.logo}/>
             </div>
             <div className='d-none d-md-flex align-items-center'>
                 <ul className={`${styles.menu} lead`}>
+                    <li onClick={() => scrollView('hero')}>Home</li>
                     <li onClick={() => scrollView('aboutme')}>Sobre mim</li>
                     <li onClick={() => scrollView('skills')}>Habilidades</li>
                     <li onClick={() => scrollView('experiences')}>Experiências</li>

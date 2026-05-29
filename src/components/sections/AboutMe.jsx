@@ -3,8 +3,8 @@ import eu from '../../assets/img/eu.jpeg'
 
 function AboutMe() {
     return (
-        <section id="aboutme">
-            <h2 className="display-6">Sobre mim</h2>
+        <section id="aboutme" >
+            <h2 className={`display-6`}>Sobre mim</h2>
             <div className="row">
                 <div className={`col-12 col-lg-6 order-2 order-lg-1 ${styles.text}`}>
                     <p className="lead">

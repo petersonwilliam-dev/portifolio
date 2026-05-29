@@ -1,17 +1,36 @@
 import CardContact from "../Card/CardContact"
-import whatsapp from '../../assets/img/whatsapp.png'
-import instagram from '../../assets/img/instagram.png'
 import gmail from '../../assets/img/gmail.webp'
 
 function Contacts() {
 
+    const contacts = [
+        {
+            label: "Email",
+            value: "petersondev.profissional@gmail.com",
+            image: gmail,
+            link: "mailto:petersondev.profissional@gmail.com"
+        },
+        {
+            label: "LinkedIn",
+            value: "Peterson William",
+            image: "https://img.icons8.com/color/96/000000/linkedin.png",
+            link: "https://www.linkedin.com/in/peterson-william-02ba87243/" 
+        },
+        {
+            label: "GitHub",
+            value: "petersonwsf",
+            image: "https://img.icons8.com/color/96/000000/github--v1.png",
+            link: "https://github.com/petersonwsf"
+        }
+    ]
+
     return (
-        <section id="contacts">
-            <h2>Contatos</h2>
+        <section id="contacts" className="section_black">
+            <h2 className="display-6 title_white">Contatos</h2>
             <div className="d-flex justify-content-center flex-wrap">
-                <CardContact value="(81) 98623-5191" urlImage={whatsapp} />
-                <CardContact value="@petersonwl_" urlImage={instagram}/>
-                <CardContact value="petersondev.profissional@gmail.com" urlImage={gmail} />
+                {contacts.map((contact, index) => (
+                    <CardContact key={index} contact={contact} />
+                ))}
             </div>
         </section>
     )

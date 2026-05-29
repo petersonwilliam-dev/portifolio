@@ -1,6 +1,8 @@
+import styles from './Container.module.css';
+
 function Container({children}) {
     return (
-        <main className="container-lg bg-dark my-3 text-light p-4">
+        <main className={`w-100 ${styles.container}`}>
             {children}
         </main>
     )
