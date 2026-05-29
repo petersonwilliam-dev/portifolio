@@ -13,6 +13,7 @@ import linux from '../img/linux.png'
 import spring from '../img/spring.svg'
 import typescript from '../img/typescript.png'
 import nestjs from '../img/nestjs.png'
+import nextjs from '../img/next.png'
 
 const skills = [
     {
@@ -89,6 +90,11 @@ const skills = [
         name: "Spring",
         urlImage: spring,
         hex: "#5fb92e"
+    },
+    {
+        name: "Next JS",
+        urlImage: nextjs,
+        hex: "#8d8d8d"
     }
 ]
 

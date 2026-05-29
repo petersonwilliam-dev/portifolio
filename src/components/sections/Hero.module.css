@@ -1,5 +1,5 @@
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,6 +7,7 @@
   overflow: hidden;
   margin-bottom: 0;
   padding: 2rem;
+  background: linear-gradient(135deg, #f6f6f6 0%, #ffffff 100%);
 }
 
 .hero::before {
@@ -16,8 +17,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(55, 201, 239, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(55, 201, 239, 0.06) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 80%, rgba(55, 201, 239, 0.06) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(55, 201, 239, 0.04) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -26,19 +27,25 @@
   z-index: 2;
   text-align: center;
   animation: fadeInUp 1.2s ease-out;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .title {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 700;
   color: #333331;
   margin-bottom: 1rem;
   animation: slideInDown 1s ease-out;
+  line-height: 1.2;
+}
+
+.devSpan {
+  color: #37c9ef;
+  font-weight: 700;
 }
 
 .subtitle {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-size: clamp(0.95rem, 2.5vw, 1.3rem);
   color: #37c9ef;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -46,7 +53,7 @@
 }
 
 .description {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: #333331;
   margin-bottom: 2.5rem;
   line-height: 1.6;
@@ -55,7 +62,7 @@
 
 .ctaButton {
   padding: 1rem 2.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #fff;
   background-color: #37c9ef;
@@ -118,15 +125,13 @@
     padding: 1.5rem;
   }
 
+  .content {
+    max-width: 100%;
+  }
+
   .ctaButton {
     padding: 0.875rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    min-height: 70vh;
+    font-size: 0.95rem;
   }
 
   .title {
@@ -139,6 +144,33 @@
 
   .description {
     margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+    padding: 1rem;
+  }
+
+  .title {
+    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    margin-bottom: 1rem;
     font-size: 1rem;
+  }
+
+  .description {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

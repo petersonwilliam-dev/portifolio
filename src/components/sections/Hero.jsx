@@ -1,25 +1,36 @@
 import styles from './Hero.module.css';
+import CodeRain from './CodeRain';
 
 function Hero() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    section.scrollIntoView({ behavior: 'smooth' });
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
     <section id="hero" className={styles.hero}>
+      <CodeRain />
       <div className={styles.content}>
-        <h1 className={styles.title}>Peterson William <span className={styles.subtitle} style={{fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', fontWeight: '700'}}>DEV</span></h1>
-        <p className={styles.subtitle}>Full-Stack Developer | Web Enthusiast | Tech Innovator</p>
-        <p className={styles.description}>
-          Passionate about building scalable, user-friendly web solutions that make a real impact
+        <h1 className={styles.title}>
+          Peterson William <span className={styles.devSpan}>DEV</span>
+        </h1>
+        <p className={styles.subtitle}>
+          Desenvolvedor Full-Stack | Engenharia de Software & Soluções Web
         </p>
-        <button 
-          className={styles.ctaButton}
-          onClick={() => scrollToSection('aboutme')}
-        >
-          Veja meus trabalhos
-        </button>
+        <p className={styles.description}>
+          Especializado em construir aplicações modernas, escaláveis e de alto desempenho, 
+          transformando ideias complexas em código limpo e soluções de real impacto.
+        </p>
+        <div className={styles.actions}>
+          <button 
+            className={styles.ctaButton}
+            onClick={() => scrollToSection('projects')} // Alterado para fazer mais sentido com o texto do botão
+          >
+            Conheça meu trabalho
+          </button>
+        </div>
       </div>
     </section>
   );
