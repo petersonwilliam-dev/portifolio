@@ -12,9 +12,9 @@ function CardProject({project}) {
                 </div>
                 <div className="text-start">
                     <h5>{project.name}</h5>
-                    <p className='lead text-secondary'><span>Tecnologias: </span>{project.technologies}</p>
+                    <p className='lead'><span>Tecnologias: </span>{project.technologies}</p>
                     <div className="text-center mt-3">
-                        <button data-bs-toggle="modal" data-bs-target={`#${project.id}`} className="btn btn-primary">Ver detalhes</button>   
+                        <button data-bs-toggle="modal" data-bs-target={`#${project.id}`} className={styles.detailsBtn}>Ver detalhes</button>   
                     </div>
                 </div>
             </div>
