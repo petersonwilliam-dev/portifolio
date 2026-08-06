@@ -31,7 +31,7 @@ function ModalProject({project}) {
                              </p>
                         </div>
                         <div className={`d-flex justify-content-end ${styles.links}`}>
-                            <a target="_blank" href={project.urlPage} className={styles.btnPrimary}><ion-icon name="code-slash-outline"></ion-icon>Ver projeto</a>
+                            {project.urlPage && <a target="_blank" href={project.urlPage} className={styles.btnPrimary}><ion-icon name="code-slash-outline"></ion-icon>Ver projeto</a>}
                             <a target="_blank" href={project.urlCode} className={styles.btnSecondary}><ion-icon name="logo-github"></ion-icon>Ver código fonte</a>
                         </div>
                     </div>
