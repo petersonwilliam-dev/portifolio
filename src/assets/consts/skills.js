@@ -14,6 +14,10 @@ import spring from '../img/spring.svg'
 import typescript from '../img/typescript.png'
 import nestjs from '../img/nestjs.png'
 import nextjs from '../img/next.png'
+import metabase from '../img/metabase.webp'
+import power_bi from '../img/power_bi.webp'
+import dbt from '../img/dbt.png'
+import airflow from '../img/airflow.png'
 
 const skills = [
     {
@@ -95,6 +99,28 @@ const skills = [
         name: "Next JS",
         urlImage: nextjs,
         hex: "#8d8d8d"
+    },
+
+
+    {
+        name: "Metabase",
+        urlImage: metabase,
+        hex: "#509ee3"
+    },
+    {
+        name: "DBT",
+        urlImage: dbt,
+        hex: '#ff694a'
+    },
+    {
+        name: "Airflow",
+        urlImage: airflow,
+        hex: "#017cee"
+    },
+    {
+        name: "Power BI",
+        urlImage: power_bi,
+        hex: "#e6ad10"
     }
 ]
 
